@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Niharika's Homepage</title>
+    <meta name="description" content="Personal homepage of Niharika, a 14-year-old 9th grade student." />
+    <meta property="og:title" content="Niharika's Homepage" />
+    <meta property="og:description" content="Personal homepage of Niharika, a 14-year-old 9th grade student." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Welcome to Niharika's Website!</h1>
+        <nav>
+          <a href="index.html">Home</a> |
+          <a href="about.html">About Me</a> |
+          <a href="things.html">Things I Like</a> |
+          <a href="shimla.html">My Shimla Trip</a> |
+          <a href="guestbook.html">Guestbook</a> |
+          <button id="theme-toggle" class="theme-toggle-btn" type="button">Theme: Light</button>
+        </nav>
+      </header>
+
+      <hr />
+
+      <main>
+        <section>
+          <h2>Hello there!</h2>
+          <p>Hi, I am Niharika! I am 14 years old and currently in 9th grade. Welcome to my small personal space on the web where I share a little about myself, my favorite hobbies, and photos from my favorite family trip to Shimla.</p>
+        </section>
+
+        <section>
+          <h3>What I like doing</h3>
+          <p>Here are a few activities I really enjoy during my free time <em>(sample list)</em>:</p>
+          <ul>
+            <li>Listening to music and finding new acoustic tracks</li>
+            <li>Taking photos whenever we go traveling</li>
+            <li>Reading mystery books and short stories</li>
+            <li>Drawing and sketching in my notebook</li>
+            <li>Exploring interesting stuff on the web</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>A small surprise</h3>
+          <p>Curious to know a quick secret about this site?</p>
+          <button id="secret-btn">click me</button>
+          <div id="secret-message" class="box" style="display: none;"></div>
+        </section>
+
+        <section>
+          <h3>How are you feeling today?</h3>
+          <p>Click a mood button to get a custom quick note:</p>
+          <div class="mood-container">
+            <button class="mood-btn" data-mood="Happy">Happy</button>
+            <button class="mood-btn" data-mood="Sleepy">Sleepy</button>
+            <button class="mood-btn" data-mood="Excited">Excited</button>
+            <button class="mood-btn" data-mood="Tired">Tired</button>
+          </div>
+          <p id="mood-text" class="box">Select a mood above to see a message!</p>
+        </section>
+
+        <div id="timed-greeting" class="notice-box" style="display: none;"></div>
+
+        <section>
+          <h3>Personal Note</h3>
+          <p>I built this website myself while learning HTML, CSS, and JavaScript. It is simple, but it was really fun to make!</p>
+        </section>
+      </main>
+
+      <hr />
+
+      <footer>
+        <p>Made by Niharika.</p>
+      </footer>
+    </div>
+
+    <script src="theme.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
