@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guestbook - Niharika's Homepage</title>
+    <meta name="description" content="Sign Niharika's guestbook and leave a friendly message." />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Niharika's Guestbook</h1>
+        <nav>
+          <a href="index.html">Home</a> |
+          <a href="about.html">About Me</a> |
+          <a href="things.html">Things I Like</a> |
+          <a href="shimla.html">My Shimla Trip</a> |
+          <a href="guestbook.html">Guestbook</a> |
+          <button id="theme-toggle" class="theme-toggle-btn" type="button">Theme: Light</button>
+        </nav>
+      </header>
+
+      <hr />
+
+      <main>
+        <section>
+          <h2>Sign my guestbook!</h2>
+          <p>Feel free to leave a comment or say hi! You can write about my website, recommend a book or song, or share a travel memory. Please be kind and respectful :)</p>
+          
+        </section>
+
+        <section>
+          <form id="guestbook-form" class="guestbook-form-box">
+            <h3>leave a comment!</h3>
+            <div class="form-group">
+              <label for="guest-name">Name</label>
+              <input type="text" id="guest-name" required placeholder="Your name or nickname" maxlength="40" />
+            </div>
+            <div class="form-group">
+              <label for="guest-website">Website (Optional)</label>
+              <input type="text" id="guest-website" placeholder="https://example.com" maxlength="100" />
+            </div>
+            <div class="form-group">
+              <label for="guest-message">Message</label>
+              <textarea id="guest-message" required placeholder="Write a short message here..." rows="4" maxlength="400"></textarea>
+            </div>
+            <div class="form-actions">
+              <button type="submit">submit</button>
+              <button type="button" id="clear-entries-btn" class="clear-btn">Clear local entries</button>
+            </div>
+          </form>
+        </section>
+
+        <section>
+          <h2>Messages</h2>
+          <div id="entries-list"></div>
+        </section>
+
+        <p><a href="index.html">&larr; Back to Homepage</a></p>
+      </main>
+
+      <hr />
+
+      <footer>
+        <p>Made by Niharika.</p>
+      </footer>
+    </div>
+
+    <script src="theme.js"></script>
+    <script src="guestbook.js"></script>
+  </body>
+</html>
